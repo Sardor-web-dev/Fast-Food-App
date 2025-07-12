@@ -16,7 +16,8 @@
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "package": "com.sardorwebdev.fastfood"
     },
     "web": {
       "bundler": "metro",
@@ -45,6 +46,13 @@
     ],
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "87fffc9f-76b4-498b-84a8-9f2675af1d6f"
+      }
+    },
+    "owner": "sardor-web-dev"
   }
 }
