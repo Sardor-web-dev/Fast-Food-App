@@ -7,7 +7,7 @@ import { useEffect } from "react";
 import CartButton from "@/components/CartButton";
 import cn from "clsx";
 import MenuCart from "@/components/MenuCart";
-import { MenuItem } from "@/type";
+import { Category, MenuItem } from "@/type";
 import SearchBar from "@/components/SeacrhBar";
 import Filter from "@/components/Filter";
 
@@ -64,7 +64,7 @@ const Search = () => {
               <CartButton />
             </View>
             <SearchBar />
-            <Filter categories={categories || []} />
+            <Filter categories={categories as Category[]} />
           </View>
         )}
         ListEmptyComponent={() => !loading && <Text>No results</Text>}
