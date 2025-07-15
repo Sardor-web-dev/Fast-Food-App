@@ -12,6 +12,7 @@ import { Fragment } from "react";
 import cn from "clsx";
 
 import CartButton from "@/components/CartButton";
+import { router } from "expo-router";
 // import * as Sentry from "@sentry/react-native"
 // import useAuthStore from "@/store/auth.store";
 
@@ -30,6 +31,7 @@ export default function Index() {
           return (
             <View>
               <Pressable
+                onPress={() => router.push("/search")}
                 key={index}
                 className={cn(
                   "offer-card",
